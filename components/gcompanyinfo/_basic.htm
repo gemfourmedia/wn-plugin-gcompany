@@ -1,0 +1,77 @@
+<div class="gcompany-info__basic row">
+	
+	<div class="col-12 col-md-6">
+		{% if company.logo %}
+			<div class="gcompany-info__logo">
+				<img src="{{company.logo|media}}" class="img-fluid" />
+			</div>
+		{% endif %}
+		
+		{% if company.full_name %}
+		<h1 class="gcompany-info__full_name">
+			{{company.full_name}}
+		</h1>
+		{% endif %}
+		
+		{% if company.short_name %}
+		<h2 class="gcompany-info__short_name">
+			{{company.short_name}}
+		</h2>
+		{% endif %}
+		
+		{% if company.desc %}
+		<div class="gcompany-info__desc">
+			{{company.desc|raw}}
+		</div>
+		{% endif %}
+	</div>
+
+	<div class="col-12 col-md-6">
+		<ul class="list-unstyled gcompany-info__basic-list">
+			{% if company.address %}
+			<li>
+				<span class="icon bi-geo-alt"></span>
+				<span class="sr-only">{{'gemfourmedia.gcompany::frontend.info.address'|trans}}</span>
+				<span class="gcompany-address__full_address">{{company.address.short_address|raw}}</span>
+				<a href="{{company.address.direction_link}}" target="_blank" class="gcompany-address__direction_link">Direction</a>
+			</li>
+			{% endif %}
+			{% if company.email %}
+			<li>
+				<span class="icon bi-envelope"></span>
+				<span class="sr-only">{{'gemfourmedia.gcompany::frontend.info.email'|trans}}</span>
+				<a href="mailto:{{html_email(email)}}" class="gcompany-info__email">{{company.email}}</a>
+			</li>
+			{% endif %}
+			{% if company.hotline %}
+			<li>
+				<span class="icon bi-telephone"></span>
+				<span class="sr-only">{{'gemfourmedia.gcompany::frontend.info.hotline'|trans}}</span>
+				<a href="tel:{{hotline}}" class="gcompany-info__hotline">{{company.hotline}}</a>
+			</li>
+			{% endif %}
+			{% if company.business_hour_short %}
+			<li>
+				<span class="icon bi-calendar-date"></span>
+				<span class="sr-only">{{'gemfourmedia.gcompany::frontend.info.business_hour_short'|trans}}</span>
+				<span class="gcompany-info__business_hour_short">{{company.business_hour_short}}</span>
+			</li>
+			{% endif %}
+			{% if company.taxcode %}
+			<li>
+				<span class="icon bi-currency-dollar"></span>
+				<span class="sr-only">{{'gemfourmedia.gcompany::frontend.info.taxcode'|trans}}</span>
+				<span class="gcompany-info__taxcode">{{company.taxcode}}</span>
+			</li>
+			{% endif %}
+			{% if company.business_license %}
+			<li>
+				<span class="icon bi-briefcase"></span>
+				<span class="sr-only">{{'gemfourmedia.gcompany::frontend.info.business_license'|trans}}</span>
+				<span class="gcompany-info__business_license">{{company.business_license}}</span>
+			</li>
+			{% endif %}
+		</ul>
+	</div>
+
+</div>

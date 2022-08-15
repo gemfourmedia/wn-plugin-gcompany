@@ -1,0 +1,12 @@
+name: Introduction
+form: $/gemfourmedia/gcompany/models/category/fields_introduction.yaml
+modelClass: GemFourMedia\GCompany\Models\Category
+defaultRedirect: gemfourmedia/gcompany/category/index/introduction
+create:
+    title: 'New Introduction Category'
+    redirect: 'gemfourmedia/gcompany/category/update/introduction/:id'
+    redirectClose: gemfourmedia/gcompany/category/index/introduction
+update:
+    title: 'Edit Introduction Category'
+    redirect: gemfourmedia/gcompany/category/index/introduction
+    redirectClose: gemfourmedia/gcompany/category/index/introduction

@@ -1,0 +1,19 @@
+{% if business_hour_full|length > 0 %}
+<div class="gcompany-info__business-hour-full">
+	<h3>{{"gemfourmedia.gcompany::frontEnd.info.business_hour_full.label"|trans}}</h3>
+	<ul>
+		{% for day in business_hour_full %}
+			<li>
+				<div>{{day.label|capitalize}}:</div>
+				<div>
+					{% for open, close in day.hours %}
+						<time>{{open}} - {{close}}</time><br />
+					{% else %}
+						{{day.hours}}
+					{% endfor %}
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

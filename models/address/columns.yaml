@@ -1,0 +1,61 @@
+columns:
+    id:
+        label: 'gemfourmedia.gcompany::lang.address.fields.id'
+        type: number
+        sortable: true
+    type:
+        label: 'gemfourmedia.gcompany::lang.address.fields.type'
+        type: text
+        sortable: true
+    name:
+        label: 'gemfourmedia.gcompany::lang.address.fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    address_1:
+        label: 'gemfourmedia.gcompany::lang.address.fields.address_1'
+        type: text
+        searchable: true
+        sortable: true
+    address_2:
+        label: 'gemfourmedia.gcompany::lang.address.fields.address_2'
+        type: text
+        searchable: true
+        sortable: true
+    city:
+        label: 'gemfourmedia.gcompany::lang.address.fields.city'
+        type: text
+        searchable: true
+        sortable: true
+    state:
+        label: 'gemfourmedia.gcompany::lang.address.fields.state'
+        type: text
+        searchable: true
+        sortable: true
+    zip:
+        label: 'gemfourmedia.gcompany::lang.address.fields.zip'
+        type: text
+        sortable: true
+    phone:
+        label: 'gemfourmedia.gcompany::lang.address.fields.phone'
+        type: text
+        sortable: true
+    email:
+        label: 'gemfourmedia.gcompany::lang.address.fields.email'
+        type: text
+        searchable: true
+        sortable: true
+    is_default:
+        label: 'gemfourmedia.gcompany::lang.address.fields.is_default'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.address.fields.created_at'
+        type: timetense
+        invisible: true
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.address.fields.updated_at'
+        type: timesince
+        invisible: false
+        sortable: true

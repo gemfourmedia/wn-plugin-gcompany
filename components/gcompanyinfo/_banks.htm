@@ -1,0 +1,14 @@
+{% if banks %}
+<div class="gcompany-info__mil">
+	<h3>{{"gemfourmedia.gcompany::frontEnd.info.banks.label"|trans}}</h3>
+	<ul>
+		{% for bank in banks %}
+		<li>
+			<h4>{{bank.bank_name}}</h4>
+			<div>{{bank.account_id}}</div>
+			<div>{{bank.account_name}}</div>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

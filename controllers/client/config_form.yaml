@@ -1,0 +1,10 @@
+name: Client
+form: $/gemfourmedia/gcompany/models/client/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Client
+defaultRedirect: gemfourmedia/gcompany/client
+create:
+    redirect: 'gemfourmedia/gcompany/client/update/:id'
+    redirectClose: gemfourmedia/gcompany/client
+update:
+    redirect: gemfourmedia/gcompany/client
+    redirectClose: gemfourmedia/gcompany/client

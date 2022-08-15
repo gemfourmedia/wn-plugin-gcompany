@@ -1,0 +1,10 @@
+name: File
+form: $/gemfourmedia/gcompany/models/file/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\File
+defaultRedirect: gemfourmedia/gcompany/file
+create:
+    redirect: 'gemfourmedia/gcompany/file/update/:id'
+    redirectClose: gemfourmedia/gcompany/file
+update:
+    redirect: gemfourmedia/gcompany/file
+    redirectClose: gemfourmedia/gcompany/file

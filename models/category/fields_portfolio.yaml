@@ -1,0 +1,87 @@
+fields:
+    name:
+        label: 'gemfourmedia.gcompany::lang.category.fields.name'
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: 'gemfourmedia.gcompany::lang.category.fields.slug'
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+    short_desc:
+        label: 'gemfourmedia.gcompany::lang.category.fields.short_desc'
+        size: ''
+        span: auto
+        type: textarea
+    desc:
+        label: 'gemfourmedia.gcompany::lang.category.fields.desc'
+        size: ''
+        span: full
+        type: richeditor
+tabs:
+    fields:
+        meta_title:
+            label: Text
+            span: left
+            type: text
+            preset:
+                field: name
+                type: exact
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_description:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_title'
+            size: ''
+            span: left
+            type: textarea
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_keywords:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_keywords'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+secondaryTabs:
+    fields:
+        image:
+            label: 'gemfourmedia.gcompany::lang.category.fields.image'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            type: fileupload
+            tab: 'gemfourmedia.gcompany::lang.category.tabs.publishing'
+        group:
+            label: 'gemfourmedia.gcompany::lang.category.fields.group'
+            showSearch: true
+            span: full
+            readOnly: 1
+            type: dropdown
+            default: 'portfolio'
+            tab: 'gemfourmedia.gcompany::lang.category.tabs.publishing'
+        parent:
+            label: 'gemfourmedia.gcompany::lang.category.fields.parent'
+            nameFrom: name
+            descriptionFrom: description
+            emptyOption: 'gemfourmedia.gcompany::lang.category.fields.parent_prompt'
+            span: full
+            type: relation
+            scope: 'portfolio'
+            tab: 'gemfourmedia.gcompany::lang.category.tabs.publishing'
+        published:
+            label: 'gemfourmedia.gcompany::lang.category.fields.published'
+            span: full
+            default: 1
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.category.tabs.publishing'
+        featured:
+            label: 'gemfourmedia.gcompany::lang.category.fields.featured'
+            span: full
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.category.tabs.publishing'

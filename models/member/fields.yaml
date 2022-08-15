@@ -1,0 +1,99 @@
+fields:
+    published:
+        label: 'gemfourmedia.gcompany::lang.member.fields.published'
+        span: auto
+        default: 1
+        type: switch
+    featured:
+        label: 'gemfourmedia.gcompany::lang.member.fields.featured'
+        span: auto
+        type: switch
+    name:
+        label: 'gemfourmedia.gcompany::lang.member.fields.name'
+        span: auto
+        required: 1
+        type: text
+    avatar:
+        label: 'gemfourmedia.gcompany::lang.member.fields.avatar'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        span: auto
+        type: mediafinder
+tabs:
+    fields:
+        email:
+            label: 'gemfourmedia.gcompany::lang.member.fields.email'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.info'
+        phone:
+            label: 'gemfourmedia.gcompany::lang.member.fields.phone'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.info'
+        position:
+            label: 'gemfourmedia.gcompany::lang.member.fields.position'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.info'
+        department:
+            label: 'gemfourmedia.gcompany::lang.member.fields.department'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.info'
+        quote:
+            label: 'gemfourmedia.gcompany::lang.member.fields.quote'
+            size: ''
+            span: full
+            type: richeditor
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.info'
+        skills:
+            label: 'gemfourmedia.gcompany::lang.member.fields.skills.label'
+            prompt: 'Add new item'
+            style: default
+            span: full
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.skills'
+            form:
+                fields:
+                    name:
+                        label: 'gemfourmedia.gcompany::lang.member.fields.skills.name'
+                        span: auto
+                        type: text
+                    percent:
+                        label: 'gemfourmedia.gcompany::lang.member.fields.skills.percent'
+                        span: auto
+                        type: number
+                        min: 0
+                        max: 100
+
+        socials:
+            label: 'gemfourmedia.gcompany::lang.member.fields.socials.label'
+            prompt: 'Add new item'
+            style: default
+            span: full
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.member.tabs.socials'
+            form:
+                fields:
+                    name:
+                        label: 'gemfourmedia.gcompany::lang.member.fields.socials.name'
+                        span: auto
+                        type: text
+                    icon:
+                        label: 'gemfourmedia.gcompany::lang.member.fields.socials.icon'
+                        span: auto
+                        type: dropdown
+                        options:
+                            facebook: Facebook
+                            youtube: Youtube
+                            instagram: Instagram
+                            twitter: Twitter
+                            linkedin: LinkedIn
+                            tiktok: Tiktok
+                            reddit: Reddit
+                    link:
+                        label: 'gemfourmedia.gcompany::lang.member.fields.socials.link'
+                        span: full
+                        type: text

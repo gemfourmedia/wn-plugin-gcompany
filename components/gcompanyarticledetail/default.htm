@@ -1,0 +1,14 @@
+{% set item = __SELF__.item %}
+
+{% if item %}
+<div class="gcompany-article" id="{{__SELF__}}">
+	<div class="gcompany-article__header">
+		<h1 class="gcompany-article__title">{{item.title}}</h1>
+	</div>
+	<div class="gcompany-article__body">
+		{% for row in item.content %}
+			{{row.text|raw}}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}

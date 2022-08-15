@@ -1,0 +1,34 @@
+{% set item = __SELF__.items %}
+
+<div class="gcompany-articles" id="{{__SELF__}}">
+	{% if title or subtitle %}
+	<div class="gcompany-articles__header">
+		{% if title %}
+		<h3 class="gcompany-articles__title">{{title}}</h3>
+		{% endif %}
+		
+		{% if subtitle %}
+		<div class="gcompany-articles__subtitle">{{subtitle}}</div>
+		{% endif %}
+	</div>
+	{% endif %}
+	<div class="gcompany-articles__body">
+		<div class="row">
+			{% for item in items %}
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="card">
+					<div class="card-header">
+						<img src="{{item.main_image.thumb(500,500)}}" alt="{{item.title}}" class="img-fluid"/>
+					</div>
+					<div class="card-body">
+						{{item.introtext|raw}}
+					</div>
+					<div class="card-footer">
+						<a href="{{item.url}}" title="{{item.title}}">Detail</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

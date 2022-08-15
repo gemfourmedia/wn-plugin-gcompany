@@ -1,0 +1,31 @@
+<div data-control="toolbar">
+    <?php if ($this->user->hasAccess('gcompany.introduction.access')): ?>
+    <a href="<?= Backend::url('gemfourmedia/gcompany/category/introduction') ?>" class="btn btn-default oc-icon-chevron-left"><?= e(trans('gemfourmedia.gcompany::lang.buttons.back_introduction')) ?></a>
+    <?php endif; ?>
+    
+    <?php if ($this->user->hasAccess('gcompany.introduction.create')): ?>
+    <a href="<?= Backend::url('gemfourmedia/gcompany/category/introduction_create') ?>" class="btn btn-primary oc-icon-plus"><?= e(trans('backend::lang.form.create')) ?></a>
+    <?php endif; ?>
+    
+    <?php if ($this->user->hasAccess('gcompany.introduction.update')): ?>
+    <a href="<?= Backend::url('gemfourmedia/gcompany/category/reorder/introduction') ?>" class="btn btn-default oc-icon-list"><?= e(trans('backend::lang.reorder.default_title')) ?></a>
+    <?php endif; ?>
+    
+    <?php if ($this->user->hasAccess('gcompany.introduction.delete')): ?>
+    <button
+        class="btn btn-default oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.control-list').listWidget('getChecked')
+        })"
+        data-request="onDelete"
+        data-request-confirm="<?= e(trans('backend::lang.list.delete_selected_confirm')) ?>"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        <?= e(trans('backend::lang.list.delete_selected')) ?>
+    </button>
+    <?php endif; ?>
+</div>

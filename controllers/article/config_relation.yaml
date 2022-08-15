@@ -1,0 +1,30 @@
+files:
+    label: gemfourmedia.gcompany::lang.article.fields.files
+    view:
+        list: $/gemfourmedia/gcompany/models/file/columns.yaml
+        toolbarButtons: create|add|remove
+    manage:
+        form: $/gemfourmedia/gcompany/models/file/fields.yaml
+        list: $/gemfourmedia/gcompany/models/file/columns.yaml
+        recordsPerPage: 10
+clients:
+    label: gemfourmedia.gcompany::lang.article.fields.clients
+    view:
+        list: $/gemfourmedia/gcompany/models/client/columns.yaml
+        toolbarButtons: create|add|remove
+    manage:
+        form: $/gemfourmedia/gcompany/models/client/fields_modal.yaml
+        list: $/gemfourmedia/gcompany/models/client/columns.yaml
+        recordsPerPage: 10
+blocks:
+    label: gemfourmedia.gcompany::lang.article.fields.blocks
+    view:
+        list: $/gemfourmedia/gcompany/models/block/columns.yaml
+        showSorting: false
+        defaultSort:
+            column: sort_order
+            direction: asc
+        toolbarButtons: create|remove
+    manage:
+        form: $/gemfourmedia/gcompany/models/block/fields.yaml
+        recordsPerPage: 10

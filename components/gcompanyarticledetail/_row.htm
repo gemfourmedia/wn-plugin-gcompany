@@ -1,0 +1,25 @@
+{% if row %}
+<div class="gcompany-article__row">
+	{% if row.icon %}
+	<i class="row-icon {{row.icon}}"></i>
+	{% endif %}
+
+	{% if row.title %}
+	<h4 class="row-title">{{row.title}}</h4>
+	{% endif %}
+
+	{% if row.subtitle %}
+	<div class="row-subtitle">{{row.subtitle}}</div>
+	{% endif %}
+
+	{% if row.image %}
+	<img class="row-image img-fluid" src="{{row.image|media}}" />
+	{% endif %}
+	
+
+	{% if row.text %}
+	<div class="row-text">{{row.text}}</div>
+	{% endif %}
+
+</div>
+{% endif %}

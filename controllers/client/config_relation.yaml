@@ -1,0 +1,9 @@
+testimonials:
+    label: gemfourmedia.gcompany::lang.client.fields.testimonials
+    view:
+        list: $/gemfourmedia/gcompany/models/testimonial/columns.yaml
+        toolbarButtons: create|remove
+    manage:
+        form: $/gemfourmedia/gcompany/models/testimonial/fields_relation_modal.yaml
+        list: $/gemfourmedia/gcompany/models/testimonial/columns.yaml
+        recordsPerPage: 10

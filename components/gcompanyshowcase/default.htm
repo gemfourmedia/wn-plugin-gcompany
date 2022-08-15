@@ -1,0 +1,37 @@
+{% set company = __SELF__.company %}
+{% set title = __SELF__.title %}
+{% set subtitle = __SELF__.subtitle %}
+{% set cssClass = __SELF__.cssClass %}
+{% set type = __SELF__.type %}
+{% set items = __SELF__.items %}
+
+<div class="gcompany-showcase {{__SELF__.alias}} {{cssClass}}" id="{{__SELF__.id}}">
+	{% if title or subtitle %}
+	<div class="gcompany-showcase__header">
+		{% if title %}
+		<h3 class="gcompany-showcase__title">{{title}}</h3>
+		{% endif %}
+		
+		{% if subtitle %}
+		<div class="gcompany-showcase__subtitle">{{subtitle}}</div>
+		{% endif %}
+	</div>
+	{% endif %}
+
+	<div class="gcompany-showcase__body" id="{{__SELF__}}__body">
+		{% partial __SELF__~'::_'~type items=items type=type %}
+	</div>
+</div>
+
+{#
+	# Ajax pagination intergration sample
+	<div class="gcompany-showcase__pagination" id="{{__SELF__}}__pagination">
+		
+		{% partial __SELF__~'::_pagination' 
+			items=items 
+			type=type 
+			part=__SELF__~'::_'~type
+			updateArea=__SELF__~'__body' 
+		%}
+	</div>
+#}

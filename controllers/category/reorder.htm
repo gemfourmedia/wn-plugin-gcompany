@@ -1,0 +1,12 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('gemfourmedia/gcompany/category/'.$type) ?>">Category</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<div class="layout-row">
+	<div class="layout padded-container">
+		<?= $this->reorderRender() ?>
+	</div>
+</div>

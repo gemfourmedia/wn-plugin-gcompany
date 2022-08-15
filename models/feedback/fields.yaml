@@ -1,0 +1,34 @@
+fields:
+    form:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.form'
+        span: auto
+        disabled: 0
+        readOnly: 1
+        context:
+            - update
+            - preview
+        type: text
+    status:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.status'
+        showSearch: true
+        span: auto
+        context:
+            - update
+            - preview
+        type: dropdown
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.created_at'
+        mode: datetime
+        span: auto
+        readOnly: 1
+        context:
+            - update
+            - preview
+        type: datepicker
+    data:
+        span: full
+        path: $/gemfourmedia/gcompany/feedback/models/_field_data.htm
+        context:
+            - update
+            - preview
+        type: partial

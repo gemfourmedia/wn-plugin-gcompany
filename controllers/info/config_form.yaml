@@ -1,0 +1,10 @@
+name: Info
+form: $/gemfourmedia/gcompany/models/info/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Info
+defaultRedirect: gemfourmedia/gcompany/info
+create:
+    redirect: 'gemfourmedia/gcompany/info/update/:id'
+    redirectClose: gemfourmedia/gcompany/info
+update:
+    redirect: gemfourmedia/gcompany/info
+    redirectClose: gemfourmedia/gcompany/info

@@ -1,0 +1,4 @@
+@CHARSET "ISO-8859-1";
+.gm-googlemaps img{
+ max-width: none!important;	
+}

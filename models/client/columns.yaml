@@ -1,0 +1,42 @@
+columns:
+    id:
+        label: 'gemfourmedia.gcompany::lang.client.fields.id'
+        type: number
+        sortable: true
+    logo:
+        label: 'gemfourmedia.gcompany::lang.client.fields.logo'
+        type: image
+        sortable: false
+        searchable: false
+        width: 60
+        height: 60
+        options:
+            mode: 'crop'
+    name:
+        label: 'gemfourmedia.gcompany::lang.client.fields.name'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    type:
+        label: 'gemfourmedia.gcompany::lang.client.fields.type'
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: 'gemfourmedia.gcompany::lang.client.fields.published'
+        type: switch
+        sortable: true
+    featured:
+        label: 'gemfourmedia.gcompany::lang.client.fields.featured'
+        type: switch
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.client.fields.created_at'
+        type: timetense
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.client.fields.updated_at'
+        type: timesince
+        invisible: true
+        sortable: true

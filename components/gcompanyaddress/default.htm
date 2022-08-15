@@ -1,0 +1,35 @@
+{% set company = __SELF__.company %}
+{% set title = __SELF__.title %}
+{% set subtitle = __SELF__.subtitle %}
+{% set cssClass = __SELF__.cssClass %}
+{% set mode = __SELF__.mode %}
+{% set address = __SELF__.address %}
+{% set addresses = __SELF__.addresses %}
+
+<div class="gcompany-address {{__SELF__.alias}}" id="{{__SELF__.id}}">
+	{% if title or subtitle %}
+	<div class="gcompany-address__header">
+		{% if title %}
+		<h3 class="gcompany-address__title">{{title}}</h3>
+		{% endif %}
+		
+		{% if subtitle %}
+		<div class="gcompany-address__subtitle">{{subtitle}}</div>
+		{% endif %}
+	</div>
+	{% endif %}
+
+	<div class="gcompany-address__body">
+		{% if (mode == 'all') and (addresses|length > 0) %}
+		<div class="row">
+		{% for address in addresses %}
+			<div class="col-12 col-md-6 col-lg-4">
+				{% partial __SELF__~'::_single' address=address %}
+			</div>
+		{% endfor %}
+		</div>
+		{% else %}
+			{% partial __SELF__~'::_single' address=address %}
+		{% endif %}
+	</div>
+</div>

@@ -1,0 +1,4 @@
+title: Article
+modelClass: GemFourMedia\GCompany\Models\Article
+toolbar:
+    buttons: reorder_toolbar

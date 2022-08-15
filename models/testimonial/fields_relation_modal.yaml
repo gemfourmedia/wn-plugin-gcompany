@@ -1,0 +1,65 @@
+fields:
+    title:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.title'
+        span: auto
+        type: text
+    rating:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.rating'
+        showSearch: true
+        span: auto
+        default: '5'
+        type: dropdown
+    company:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.company'
+        span: auto
+        type: text
+    webpage:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.webpage'
+        span: auto
+        type: text
+    content:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.content'
+        size: small
+        span: full
+        type: richeditor
+tabs:
+    fields:
+        reviewer_avatar:
+            label: 'gemfourmedia.gcompany::lang.testimonial.fields.reviewer_avatar'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: full
+            type: mediafinder
+            tab: 'gemfourmedia.gcompany::lang.testimonial.tabs.publishing'
+        reviewer_name:
+            label: 'gemfourmedia.gcompany::lang.testimonial.fields.reviewer_name'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.testimonial.tabs.publishing'
+        reviewer_position:
+            label: 'gemfourmedia.gcompany::lang.testimonial.fields.reviewer_position'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.testimonial.tabs.publishing'
+        published:
+            label: 'gemfourmedia.gcompany::lang.testimonial.fields.published'
+            span: auto
+            default: 1
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.testimonial.tabs.publishing'
+        featured:
+            label: 'gemfourmedia.gcompany::lang.testimonial.fields.featured'
+            span: auto
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.testimonial.tabs.publishing'
+        published_at:
+            label: 'gemfourmedia.gcompany::lang.testimonial.fields.published_at'
+            mode: datetime
+            span: left
+            trigger:
+                action: enable
+                field: published
+                condition: checked
+            type: datepicker
+            tab: 'gemfourmedia.gcompany::lang.testimonial.tabs.publishing'

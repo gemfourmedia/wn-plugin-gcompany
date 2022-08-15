@@ -1,0 +1,12 @@
+name: Portfolio
+form: $/gemfourmedia/gcompany/models/article/fields_portfolio.yaml
+modelClass: GemFourMedia\GCompany\Models\Article
+defaultRedirect: gemfourmedia/gcompany/article/index/portfolio
+create:
+    title: 'New Portfolio'
+    redirect: 'gemfourmedia/gcompany/article/update/portfolio/:id'
+    redirectClose: gemfourmedia/gcompany/article/index/portfolio
+update:
+    title: 'Edit Portfolio'
+    redirect: gemfourmedia/gcompany/article/index/portfolio
+    redirectClose: gemfourmedia/gcompany/article/index/portfolio

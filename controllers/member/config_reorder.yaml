@@ -1,0 +1,5 @@
+title: Member
+modelClass: GemFourMedia\GCompany\Models\Member
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

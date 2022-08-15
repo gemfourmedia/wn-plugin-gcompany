@@ -1,0 +1,41 @@
+columns:
+    sort_order_handle:
+        label: " "
+        type: partial
+        path: $/gemfourmedia/gcompany/models/block/_reorder_handle.htm
+        sortable: false
+        width: 20px
+    id:
+        label: 'gemfourmedia.gcompany::lang.block.fields.id'
+        type: number
+    title:
+        label: 'gemfourmedia.gcompany::lang.block.fields.title'
+        type: text
+        searchable: true
+        sortable: true
+    subtitle:
+        label: 'gemfourmedia.gcompany::lang.block.fields.subtitle'
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: 'gemfourmedia.gcompany::lang.block.fields.published'
+        type: switch
+        sortable: true
+    params:
+        label: 'gemfourmedia.gcompany::lang.block.fields.params'
+        type: text
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.block.fields.created_at'
+        type: timetense
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.block.fields.updated_at'
+        type: timesince
+        invisible: true
+        sortable: true
+    sort_order:
+        label: 'gemfourmedia.gcompany::lang.block.fields.sort_order'
+        type: number
+        sortable: true

@@ -1,0 +1,15 @@
+{% if items %}
+<div class="gcompany-showcase__partners carousel">
+	<div class="row">
+		{% for item in items %}
+		<div class="col-4 col-md-3 col-lg-2 d-flex align-items-center">
+			<div class="partner">
+				<a href="{{item.url}}" title="{{item.name}}">
+					<img src="{{item.logo|media|resize(300,auto,{mode:'fit'})}}" class="w-100 client__logo"/>
+				</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}

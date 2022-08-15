@@ -1,0 +1,12 @@
+name: Service
+form: $/gemfourmedia/gcompany/models/article/fields_service.yaml
+modelClass: GemFourMedia\GCompany\Models\Article
+defaultRedirect: gemfourmedia/gcompany/article/index/service
+create:
+    title: 'New Service'
+    redirect: 'gemfourmedia/gcompany/article/update/service/:id'
+    redirectClose: gemfourmedia/gcompany/article/index/service
+update:
+    title: 'Edit Service'
+    redirect: gemfourmedia/gcompany/article/index/service
+    redirectClose: gemfourmedia/gcompany/article/index/service

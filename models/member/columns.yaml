@@ -1,0 +1,60 @@
+columns:
+    id:
+        label: 'gemfourmedia.gcompany::lang.member.fields.id'
+        type: number
+    avatar:
+        label: 'gemfourmedia.gcompany::lang.member.fields.avatar'
+        type: image
+        sortable: false
+        searchable: false
+        width: 60
+        height: 60
+        options:
+            mode: 'crop'
+    name:
+        label: 'gemfourmedia.gcompany::lang.member.fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    position:
+        label: 'gemfourmedia.gcompany::lang.member.fields.position'
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: 'gemfourmedia.gcompany::lang.member.fields.email'
+        type: text
+        searchable: true
+        sortable: true
+    phone:
+        label: 'gemfourmedia.gcompany::lang.member.fields.phone'
+        type: text
+        searchable: true
+        sortable: true
+    department:
+        label: 'gemfourmedia.gcompany::lang.member.fields.department'
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: 'gemfourmedia.gcompany::lang.member.fields.published'
+        type: text
+        sortable: true
+    featured:
+        label: 'gemfourmedia.gcompany::lang.member.fields.featured'
+        type: text
+        sortable: true
+    sort_order:
+        label: 'gemfourmedia.gcompany::lang.member.fields.sort_order'
+        type: number
+        invisible: true
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.member.fields.created_at'
+        type: datetime
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.member.fields.updated_at'
+        type: datetime
+        invisible: true
+        sortable: true

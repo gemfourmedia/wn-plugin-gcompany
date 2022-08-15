@@ -1,0 +1,32 @@
+fields:
+    published:
+        label: 'gemfourmedia.gcompany::lang.file.fields.published'
+        span: full
+        default: 1
+        type: switch
+    title:
+        label: 'gemfourmedia.gcompany::lang.file.fields.title'
+        span: auto
+        required: 1
+        type: text
+    image:
+        label: 'gemfourmedia.gcompany::lang.file.fields.image'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        span: auto
+        type: mediafinder
+    desc:
+        label: 'gemfourmedia.gcompany::lang.file.fields.desc'
+        size: ''
+        span: full
+        type: richeditor
+    attachments:
+        label: 'gemfourmedia.gcompany::lang.file.fields.attachments'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload

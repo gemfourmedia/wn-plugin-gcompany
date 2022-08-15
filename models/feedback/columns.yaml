@@ -1,0 +1,26 @@
+columns:
+    id:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.id'
+        type: number
+        sortable: true
+    form:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.form'
+        type: text
+        searchable: true
+        sortable: true
+    data:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.data'
+        type: text
+    status:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.status'
+        type: text
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.created_at'
+        type: timetense
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.feedback.fields.updated_at'
+        type: timesince
+        invisible: true
+        sortable: true

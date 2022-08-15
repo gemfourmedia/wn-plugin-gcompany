@@ -1,0 +1,28 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table gemfourmedia_gcompany_addresses'
+    - builder_table_create_gemfourmedia_gcompany_addresses.php
+    - 'Created table gemfourmedia_gcompany_introductions'
+    - builder_table_create_gemfourmedia_gcompany_articles.php
+    - 'Created table gemfourmedia_gcompany_testimonials'
+    - builder_table_create_gemfourmedia_gcompany_testimonials.php
+    - 'Created table gemfourmedia_gcompany_members'
+    - builder_table_create_gemfourmedia_gcompany_members.php
+    - 'Created table gemfourmedia_gcompany_categories'
+    - builder_table_create_gemfourmedia_gcompany_categories.php
+    - 'Created table gemfourmedia_gcompany_articles_categories'
+    - builder_table_create_gemfourmedia_gcompany_articles_categories.php
+    - 'Created table gemfourmedia_gcompany_clients'
+    - builder_table_create_gemfourmedia_gcompany_clients.php
+    - 'Created table gemfourmedia_gcompany_articles_clients'
+    - builder_table_create_gemfourmedia_gcompany_articles_clients.php
+    - 'Created table gemfourmedia_gcompany_files'
+    - builder_table_create_gemfourmedia_gcompany_files.php
+    - 'Created table gemfourmedia_gcompany_feedbacks'
+    - builder_table_create_gemfourmedia_gcompany_feedbacks.php
+    - 'Created table gemfourmedia_gcompany_articles_files'
+    - builder_table_create_gemfourmedia_gcompany_articles_files.php
+1.0.3:
+    - 'Created table gemfourmedia_gcompany_articles_blocks'
+    - builder_table_create_gemfourmedia_gcompany_articles_blocks.php

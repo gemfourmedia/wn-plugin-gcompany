@@ -1,0 +1,27 @@
+var $text-color: #000 !default;
+var $link-color: #000 !default;
+var $link-hover-color: #000 !default;
+
+.gcompany-info{
+	&__header{}
+	&__title{}
+	&__subtitle{}
+	&__body{}
+	&__logo{}
+	&__basic-list{}
+	&__full_name{}
+	&__short_name{}
+	&__desc{}
+	&__email{}
+	&__hotline{}
+	&__business_hour_short{}
+	&__taxcode{}
+	&__business_license{}
+	&__address{}
+	&__address{
+		.gcompany-address{
+			&__full_address{}
+
+		}
+	}
+}

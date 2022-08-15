@@ -1,0 +1,37 @@
+columns:
+    id:
+        label: 'gemfourmedia.gcompany::lang.file.fields.id'
+        type: number
+        sortable: true
+    image:
+        label: 'gemfourmedia.gcompany::lang.file.fields.image'
+        type: image
+        sortable: false
+        searchable: false
+        width: 60
+        height: 60
+        options:
+            mode: 'crop'
+    title:
+        label: 'gemfourmedia.gcompany::lang.file.fields.title'
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: 'gemfourmedia.gcompany::lang.file.fields.published'
+        type: switch
+        sortable: true
+    attachments_count:
+        label: 'gemfourmedia.gcompany::lang.file.fields.attachments_count'
+        type: number
+    sort_order:
+        label: 'gemfourmedia.gcompany::lang.file.fields.sort_order'
+        type: number
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.file.fields.created_at'
+        type: timetense
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.file.fields.updated_at'
+        type: timesince
+        invisible: true

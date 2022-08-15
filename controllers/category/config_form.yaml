@@ -1,0 +1,10 @@
+name: Category
+form: $/gemfourmedia/gcompany/models/category/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Category
+defaultRedirect: gemfourmedia/gcompany/category
+create:
+    redirect: 'gemfourmedia/gcompany/category/update/:id'
+    redirectClose: gemfourmedia/gcompany/category
+update:
+    redirect: gemfourmedia/gcompany/category
+    redirectClose: gemfourmedia/gcompany/category

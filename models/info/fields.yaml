@@ -1,0 +1,376 @@
+fields:
+    full_name:
+        label: 'gemfourmedia.gcompany::lang.info.fields.full_name'
+        span: auto
+        type: text
+    slug:
+        label: 'gemfourmedia.gcompany::lang.info.fields.slug'
+        span: auto
+        preset:
+            field: full_name
+            type: slug
+        type: text
+    short_name:
+        label: 'gemfourmedia.gcompany::lang.info.fields.short_name'
+        span: left
+        type: text
+tabs:
+    fields:
+        logo:
+            label: 'gemfourmedia.gcompany::lang.info.fields.logo'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: full
+            type: mediafinder
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        email:
+            label: 'gemfourmedia.gcompany::lang.info.fields.email'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        hotline:
+            label: 'gemfourmedia.gcompany::lang.info.fields.hotline'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        phone:
+            label: 'gemfourmedia.gcompany::lang.info.fields.phone'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        fax:
+            label: 'gemfourmedia.gcompany::lang.info.fields.fax'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        taxcode:
+            label: 'gemfourmedia.gcompany::lang.info.fields.taxcode'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        business_license:
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_license'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.info'
+        desc:
+            label: 'gemfourmedia.gcompany::lang.info.fields.desc'
+            size: huge
+            span: full
+            type: richeditor
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.desc'
+        departments:
+            label: 'gemfourmedia.gcompany::lang.info.fields.departments.label'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.departments'
+            form:
+                fields:
+                    name:
+                        label: Name
+                        span: full
+                        type: text
+                    department:
+                        label: Department
+                        prompt: 'Add new item'
+                        style: default
+                        span: full
+                        type: repeater
+                        form:
+                            fields:
+                                presenter:
+                                    label: Presenter
+                                    span: auto
+                                    type: text
+                                phone:
+                                    label: Phone
+                                    span: auto
+                                    type: text
+                                email:
+                                    label: Email
+                                    span: auto
+                                    type: text
+                                skype:
+                                    label: Skype
+                                    span: auto
+                                    type: text
+        business_hour_short:
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_short'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[monday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.monday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[monday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[monday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        'business_hour[tuesday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.tuesday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[tuesday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[tuesday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        'business_hour[wednesday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.wednesday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[wednesday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[wednesday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        'business_hour[thursday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.thursday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[thursday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[thursday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        'business_hour[friday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.friday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[friday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[friday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        'business_hour[saturday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.saturday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[saturday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[saturday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        'business_hour[sunday][enable]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.sunday'
+            span: left
+            type: switch
+            'on': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+            'off': 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+        'business_hour[sunday][hours]':
+            label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.hours'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.add_hour'
+            span: left
+            trigger:
+                action: show
+                field: 'business_hour[sunday][enable]'
+                condition: checked
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.business_hour'
+            form:
+                fields:
+                    open:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.open'
+                        mode: time
+                        span: auto
+                        type: datepicker
+                    close:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.business_hour_full.close'
+                        mode: time
+                        span: auto
+                        type: datepicker
+        socials:
+            label: 'gemfourmedia.gcompany::lang.info.fields.socials.label'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.socials'
+            form:
+                fields:
+                    social_icon:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.socials.icon'
+                        span: auto
+                        type: dropdown
+                        options:
+                            facebook: Facebook
+                            youtube: Youtube
+                            instagram: Instagram
+                            twitter: Twitter
+                            linkedin: LinkedIn
+                            tiktok: Tiktok
+                    social_name:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.socials.name'
+                        span: auto
+                        type: text
+                    social_link:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.socials.link'
+                        span: full
+                        type: text
+        banks:
+            label: 'gemfourmedia.gcompany::lang.info.fields.banks.label'
+            prompt: 'Add new item'
+            style: default
+            span: full
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.mil'
+            form:
+                fields:
+                    bank_name:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.banks.name'
+                        span: full
+                        type: text
+                    account_id:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.banks.account_id'
+                        span: auto
+                        type: text
+                    account_name:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.banks.account_name'
+                        span: auto
+                        type: text
+        extrafields:
+            label: 'gemfourmedia.gcompany::lang.info.fields.extrafields.label'
+            prompt: 'gemfourmedia.gcompany::lang.info.fields.extrafields.add_new_field'
+            span: full
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.mil'
+            form:
+                fields:
+                    title:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.extrafields.title'
+                        span: auto
+                        type: text
+                    value:
+                        label: 'gemfourmedia.gcompany::lang.info.fields.extrafields.value'
+                        span: auto
+                        type: text
+        mil:
+            label: 'gemfourmedia.gcompany::lang.info.fields.mil'
+            size: ''
+            span: full
+            type: richeditor
+            tab: 'gemfourmedia.gcompany::lang.info.tabs.mil'

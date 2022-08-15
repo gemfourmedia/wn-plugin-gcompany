@@ -1,0 +1,18 @@
+{% if items %}
+<div class="gcompany-showcase__testimonials carousel slide" data-bs-ride="carousel">
+	<div class="carousel-inner">
+		{% for item in items %}
+		<div class="testimonial-item text-center carousel-item {{loop.first ? 'active' : ''}} ">
+			<img src="{{item.reviewer_avatar|media|resize(80,80,{mode:'crop'})}}" class="mx-auto my-4 rounded-pill testimonial-item__reivewer_avatar"/>
+			<div class="text-center fst-italic testimonial-item__content">
+				{{item.content|raw}}
+			</div>
+			<div class="testimonial-item__meta">
+				<h6>-{{item.reviewer_name}}</h6>
+				<small class="text-muted">{{item.company}}</small>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}

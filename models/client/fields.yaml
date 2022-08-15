@@ -1,0 +1,75 @@
+fields:
+    name:
+        label: 'gemfourmedia.gcompany::lang.client.fields.name'
+        span: auto
+        type: text
+    slug:
+        label: 'gemfourmedia.gcompany::lang.client.fields.slug'
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    link:
+        label: 'gemfourmedia.gcompany::lang.client.fields.link'
+        span: auto
+        type: text
+    desc:
+        label: 'gemfourmedia.gcompany::lang.client.fields.desc'
+        size: large
+        span: full
+        type: richeditor
+tabs:
+    fields:
+        testimonials:
+            label: 'gemfourmedia.gcompany::lang.client.fields.testimonials'
+            type: 'partial'
+            path: '$/gemfourmedia/gcompany/models/client/_relation_testimonials.htm'
+            span: full
+            tab: 'gemfourmedia.gcompany::lang.client.tabs.testimonials'
+        meta_title:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_title'
+            span: auto
+            type: text
+            preset:
+                field: name
+                type: exact
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_description:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_description'
+            size: ''
+            span: left
+            type: textarea
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_keywords:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_keywords'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+secondaryTabs:
+    fields:
+        logo:
+            label: 'gemfourmedia.gcompany::lang.client.fields.logo'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            span: full
+            type: mediafinder
+            tab: 'gemfourmedia.gcompany::lang.client.tabs.publishing'
+        type:
+            label: 'gemfourmedia.gcompany::lang.client.fields.type'
+            showSearch: true
+            span: full
+            type: dropdown
+            tab: 'gemfourmedia.gcompany::lang.client.tabs.publishing'
+        published:
+            label: 'gemfourmedia.gcompany::lang.client.fields.published'
+            span: full
+            default: 1
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.client.tabs.publishing'
+        featured:
+            label: 'gemfourmedia.gcompany::lang.client.fields.featured'
+            span: full
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.client.tabs.publishing'

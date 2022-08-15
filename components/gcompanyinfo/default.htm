@@ -1,0 +1,30 @@
+{% set company = __SELF__.company %}
+{% set title = __SELF__.title %}
+{% set subtitle = __SELF__.subtitle %}
+{% set cssClass = __SELF__.cssClass %}
+
+<div class="gcompany-info {{__SELF__.alias}}" id="{{__SELF__.id}}">
+	{% if title or subtitle %}
+	<div class="gcompany-info__header">
+		{% if title %}
+		<h3 class="gcompany-info__title">{{title}}</h3>
+		{% endif %}
+		
+		{% if subtitle %}
+		<div class="gcompany-info__subtitle">{{subtitle}}</div>
+		{% endif %}
+	</div>
+	{% endif %}
+
+	{% if company %}
+	<div class="gcompany-info__body">
+		{% partial __SELF__~'::_basic' company=company %}
+		
+		{% partial __SELF__~'::_business_hour_full' business_hour_full=company.business_hour_full %}
+		{% partial __SELF__~'::_socials' socials=company.socials %}
+		{% partial __SELF__~'::_banks' banks=company.banks %}
+		{% partial __SELF__~'::_extrafields' extrafields=company.extrafields %}
+		{% partial __SELF__~'::_mil' mil=company.mil %}
+	</div>
+	{% endif %}
+</div>

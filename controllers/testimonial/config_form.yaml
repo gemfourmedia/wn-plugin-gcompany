@@ -1,0 +1,10 @@
+name: Testimonial
+form: $/gemfourmedia/gcompany/models/testimonial/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Testimonial
+defaultRedirect: gemfourmedia/gcompany/testimonial
+create:
+    redirect: 'gemfourmedia/gcompany/testimonial/update/:id'
+    redirectClose: gemfourmedia/gcompany/testimonial
+update:
+    redirect: gemfourmedia/gcompany/testimonial
+    redirectClose: gemfourmedia/gcompany/testimonial

@@ -1,0 +1,15 @@
+{% if socials %}
+<div class="gcompany-info__socials">
+	<h3>{{'gemfourmedia.gcompany::frontend.info.socials'|trans}}</h3>
+	<ul class="nav">
+		{% for item in socials %}
+		<li class="nav-item">
+			<a href="{{item.social_link}}" target="_blank" title="{{item.social_name}}" class="nav-item">
+				<i class="icon bi-{{item.social_icon}}"></i>
+				<span class="sr-only">{{item.social_name}}</span>
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

@@ -1,0 +1,10 @@
+name: Member
+form: $/gemfourmedia/gcompany/models/member/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Member
+defaultRedirect: gemfourmedia/gcompany/member
+create:
+    redirect: 'gemfourmedia/gcompany/member/update/:id'
+    redirectClose: gemfourmedia/gcompany/member
+update:
+    redirect: gemfourmedia/gcompany/member
+    redirectClose: gemfourmedia/gcompany/member

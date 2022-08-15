@@ -1,0 +1,181 @@
+plugin:
+    name: 'gemfourmedia.gcompany::lang.plugin.name'
+    description: 'gemfourmedia.gcompany::lang.plugin.description'
+    author: GemFourMedia
+    icon: oc-icon-building
+    homepage: 'https://wintercms.gemfourmedia.com/plugin/gcompany'
+permissions:
+    gcompany.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.access'
+    gcompany.access_setting:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.access_setting'
+    gcompany.info.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.info.access'
+    gcompany.info.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.info.update'
+    gcompany.address.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.address.access'
+    gcompany.address.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.address.create'
+    gcompany.address.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.address.update'
+    gcompany.address.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.address.delete'
+    gcompany.introduction.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.introduction.access'
+    gcompany.introduction.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.introduction.create'
+    gcompany.introduction.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.introduction.update'
+    gcompany.introduction.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.introduction.delete'
+    gcompany.portfolio.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.portfolio.access'
+    gcompany.portfolio.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.portfolio.create'
+    gcompany.portfolio.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.portfolio.update'
+    gcompany.portfolio.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.portfolio.delete'
+    gcompany.service.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.service.access'
+    gcompany.service.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.service.create'
+    gcompany.service.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.service.update'
+    gcompany.service.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.service.delete'
+    gcompany.testimonial.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.testimonial.access'
+    gcompany.testimonial.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.testimonial.create'
+    gcompany.testimonial.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.testimonial.update'
+    gcompany.testimonial.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.testimonial.delete'
+    gcompany.member.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.member.access'
+    gcompany.member.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.member.create'
+    gcompany.member.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.member.update'
+    gcompany.member.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.member.delete'
+    gcompany.feedback.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.feedback.access'
+    gcompany.feedback.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.feedback.update'
+    gcompany.feedback.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.feedback.delete'
+    gcompany.file.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.file.access'
+    gcompany.file.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.file.create'
+    gcompany.file.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.file.update'
+    gcompany.file.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.file.delete'
+    gcompany.client.access:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.client.access'
+    gcompany.client.create:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.client.create'
+    gcompany.client.update:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.client.update'
+    gcompany.client.delete:
+        tab: 'gemfourmedia.gcompany::lang.plugin.name'
+        label: 'gemfourmedia.gcompany::lang.permissions.client.delete'
+navigation:
+    gcompany-main-menu:
+        label: 'gemfourmedia.gcompany::lang.plugin.name'
+        url: gemfourmedia/gcompany/info
+        icon: icon-building
+        permissions:
+            - gcompany.access
+        order: '450'
+        sideMenu:
+            gcompany-menu-info:
+                label: 'gemfourmedia.gcompany::lang.menus.info'
+                url: gemfourmedia/gcompany/info
+                icon: icon-info
+                permissions:
+                    - gcompany.info.access
+            gcompany-menu-address:
+                label: 'gemfourmedia.gcompany::lang.menus.addresses'
+                url: gemfourmedia/gcompany/address
+                icon: icon-map-marker
+                permissions:
+                    - gcompany.address.access
+            gcompany-menu-introduction:
+                label: 'gemfourmedia.gcompany::lang.menus.introductions'
+                url: gemfourmedia/gcompany/article/index/introduction
+                icon: icon-tencent-weibo
+                permissions:
+                    - gcompany.introduction.access
+            gcompany-menu-portfolio:
+                label: 'gemfourmedia.gcompany::lang.menus.portfolios'
+                url: gemfourmedia/gcompany/article/index/portfolio
+                icon: icon-tencent-weibo
+                permissions:
+                    - gcompany.portfolio.access
+            gcompany-menu-service:
+                label: 'gemfourmedia.gcompany::lang.menus.services'
+                url: gemfourmedia/gcompany/article/index/service
+                icon: icon-tencent-weibo
+                permissions:
+                    - gcompany.introduction.access
+            gcompany-menu-testimonial:
+                label: 'gemfourmedia.gcompany::lang.menus.testimonials'
+                url: gemfourmedia/gcompany/testimonial
+                icon: icon-thumbs-up
+                permissions:
+                    - gcompany.testimonial.access
+            gcompany-menu-member:
+                label: 'gemfourmedia.gcompany::lang.menus.members'
+                url: gemfourmedia/gcompany/member
+                icon: icon-users
+                permissions:
+                    - gcompany.member.access
+            gcompany-menu-client:
+                label: 'gemfourmedia.gcompany::lang.menus.clients'
+                url: gemfourmedia/gcompany/client
+                icon: icon-handshake
+                permissions:
+                    - gcompany.client.access

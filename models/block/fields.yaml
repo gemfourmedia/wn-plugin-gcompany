@@ -1,0 +1,38 @@
+fields:
+    published:
+        label: Published
+        span: auto
+        default: 1
+        type: switch
+    title:
+        label: 'gemfourmedia.gcompany::lang.block.fields.title'
+        span: full
+        type: text
+    subtitle:
+        label: 'gemfourmedia.gcompany::lang.block.fields.subtitle'
+        span: full
+        type: text
+    content:
+        label: 'gemfourmedia.gcompany::lang.block.fields.content'
+        size: ''
+        span: full
+        type: richeditor
+    images:
+        label: 'gemfourmedia.gcompany::lang.block.fields.images'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    params[width]:
+        label: Block width
+        type: dropdown
+        default: 12
+        options:
+            'auto': 'Auto'
+            6: Half
+            12: Full

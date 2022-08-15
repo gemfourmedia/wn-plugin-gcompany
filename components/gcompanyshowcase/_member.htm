@@ -1,0 +1,24 @@
+{% if items %}
+<div class="gcompany-showcase__members carousel">
+	<div class="row">
+		{% for item in items %}
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+			<div class="member card">
+				<img src="{{item.avatar|media|resize(400,400,{mode:'crop'})}}" class="w-100 member__avatar"/>
+				<div class="member__meta text-center">
+					<h5>{{item.name}}</h5>
+					<small class="text-muted text-success fst-italic">{{item.position}}</small>
+				</div>
+				<ul class="nav mx-auto member__socials">
+					{% for social in item.socials %}
+					<li class="nav-item">
+						<a href="{{social.link}}" target="_blank" class="btn btn-light"><i class="bi-{{social.icon}}"></i></a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}

@@ -1,0 +1,32 @@
+{
+    "name": "gemfourmedia/wn-plugin-gcompany",
+    "type": "winter-plugin",
+    "description": "Most showcase company info for WinterCMS",
+    "homepage": "https://github.com/gemfourmedia/wn-plugin-gcompany",
+    "keywords": ["winter cms", "winter", "plugin", "company", "contact", "portfolio", "testimonials"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sang Dang",
+            "email": "sangdang@gemfourmedia.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gemfourmedia/wn-plugin-gcompany/issues",
+        "source": "https://github.com/gemfourmedia/wn-plugin-gcompany"
+    },
+    "require": {
+        "php": "^7.2|^8.0",
+        "composer/installers": "~1.0",
+        "caseyamcl/toc": "^3.1"
+    },
+    "extra": {
+        "installer-name": "gcompany"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

@@ -1,0 +1,10 @@
+name: Address
+form: $/gemfourmedia/gcompany/models/address/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Address
+defaultRedirect: gemfourmedia/gcompany/address
+create:
+    redirect: 'gemfourmedia/gcompany/address/update/:id'
+    redirectClose: gemfourmedia/gcompany/address
+update:
+    redirect: gemfourmedia/gcompany/address
+    redirectClose: gemfourmedia/gcompany/address

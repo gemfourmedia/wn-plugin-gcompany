@@ -1,0 +1,150 @@
+fields:
+    title:
+        label: 'gemfourmedia.gcompany::lang.article.fields.title'
+        span: auto
+        required: 1
+        type: text
+    code:
+        label: 'gemfourmedia.gcompany::lang.article.fields.code'
+        span: auto
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        subtitle:
+            label: 'gemfourmedia.gcompany::lang.article.fields.subtitle'
+            span: full
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.article.fields.content'
+        introtext:
+            label: 'gemfourmedia.gcompany::lang.article.fields.introtext'
+            size: ''
+            span: full
+            type: textarea
+            tab: 'gemfourmedia.gcompany::lang.article.fields.content'
+        content:
+            label: 'gemfourmedia.gcompany::lang.article.fields.content'
+            span: full
+            type: richeditor
+            tab: 'gemfourmedia.gcompany::lang.article.fields.content'
+        blocks:
+            label: 'gemfourmedia.gcompany::lang.article.fields.blocks'
+            span: full
+            type: partial
+            path: '$/gemfourmedia/gcompany/models/article/_field_relation_blocks.htm'
+            tab: 'gemfourmedia.gcompany::lang.article.fields.content'
+        images:
+            label: 'gemfourmedia.gcompany::lang.article.fields.images'
+            mode: image
+            prompt: '100'
+            imageWidth: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            fileTypes: 'jpg, jpeg, png, svg'
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.media'
+        embeds:
+            label: 'gemfourmedia.gcompany::lang.article.fields.embeds.label'
+            prompt: 'Add new item'
+            style: default
+            span: auto
+            type: repeater
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.media'
+            form:
+                fields:
+                    title:
+                        label: 'gemfourmedia.gcompany::lang.article.fields.embeds.title'
+                        span: full
+                        type: text
+                    code:
+                        label: 'gemfourmedia.gcompany::lang.article.fields.embeds.code'
+                        size: ''
+                        language: html
+                        span: full
+                        type: codeeditor
+        files:
+            label: 'gemfourmedia.gcompany::lang.article.fields.files'
+            nameFrom: title
+            descriptionFrom: description
+            span: full
+            type: partial
+            path: '$/gemfourmedia/gcompany/models/article/_field_relation_files.htm'
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.files'
+        meta_title:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_title'
+            span: auto
+            preset:
+                field: title
+                type: exact
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_description:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_description'
+            size: ''
+            span: left
+            type: textarea
+            preset:
+                field: introtext
+                type: exact
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_keywords:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_keywords'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+secondaryTabs:
+    fields:
+        featured:
+            label: 'gemfourmedia.gcompany::lang.article.fields.featured'
+            span: auto
+            type: switch
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.publishing'
+        published:
+            label: 'gemfourmedia.gcompany::lang.article.fields.published'
+            span: full
+            type: switch
+            default: true
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.publishing'
+        published_at:
+            label: 'gemfourmedia.gcompany::lang.article.fields.published_at'
+            mode: datetime
+            span: full
+            trigger:
+                action: enable
+                field: published
+                condition: checked
+            type: datepicker
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.publishing'
+        group:
+            label: 'gemfourmedia.gcompany::lang.article.fields.group'
+            showSearch: true
+            span: full
+            type: dropdown
+            default: service
+            readOnly: true
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.publishing'
+        category:
+            label: 'gemfourmedia.gcompany::lang.article.fields.category'
+            nameFrom: name
+            descriptionFrom: description
+            span: full
+            type: relation
+            scope: service
+            emptyOption: 'Select category'
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.publishing'
+        categories:
+            label: 'gemfourmedia.gcompany::lang.article.fields.categories'
+            nameFrom: name
+            descriptionFrom: description
+            span: full
+            type: relation
+            scope: excludeArticleCategory
+            dependsOn:
+                - category
+            tab: 'gemfourmedia.gcompany::lang.article.tabs.publishing'

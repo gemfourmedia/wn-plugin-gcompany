@@ -1,0 +1,81 @@
+fields:
+    _section_page_setting:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.section_page_setting'
+        span: full
+        type: section
+    introduction_list_page:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.introduction_list_page'
+        span: auto
+        type: dropdown
+        options: listCompanyArticlesPage
+        emptyOption: 'Inherit'
+    introduction_detail_page:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.introduction_detail_page'
+        span: auto
+        type: dropdown
+        options: listCompanyArticlePage
+        emptyOption: 'Inherit'
+    service_list_page:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.service_list_page'
+        span: auto
+        type: dropdown
+        options: listCompanyArticlesPage
+        emptyOption: 'Inherit'
+    service_detail_page:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.service_detail_page'
+        span: auto
+        type: dropdown
+        options: listCompanyArticlePage
+        emptyOption: 'Inherit'
+    portfolio_list_page:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.portfolio_list_page'
+        span: auto
+        type: dropdown
+        options: listCompanyArticlesPage
+        emptyOption: 'Inherit'
+    portfolio_detail_page:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.portfolio_detail_page'
+        span: auto
+        type: dropdown
+        options: listCompanyArticlePage
+        emptyOption: 'Inherit'
+    _section_google_map:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.section_google_map'
+        span: full
+        type: section
+    google_maps_key:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.google_maps_key'
+        span: full
+        type: text
+        commentAbove: 'gemfourmedia.gcompany::lang.setting.fields.google_maps_key_comment'
+    _section_recaptcha:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.section_recaptcha'
+        span: full
+        type: section
+    _recaptcha_help:
+        span: full
+        path: $/gemfourmedia/gcompany/models/setting/_recaptcha_help.htm
+        type: partial
+    recaptcha_site_key:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.recaptcha_site_key'
+        span: auto
+        type: text
+    recaptcha_secret_key:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.recaptcha_secret_key'
+        span: auto
+        type: text
+
+    _section_address:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.section_address'
+        span: full
+        type: section
+    full_address_format:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.full_address_format'
+        span: auto
+        type: codeeditor
+        commentAbove: 'gemfourmedia.gcompany::lang.setting.fields.full_address_format_comment'
+    short_address_format:
+        label: 'gemfourmedia.gcompany::lang.setting.fields.short_address_format'
+        span: auto
+        type: codeeditor
+        commentAbove: 'gemfourmedia.gcompany::lang.setting.fields.short_address_format_comment'

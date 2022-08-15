@@ -1,0 +1,69 @@
+<div id="cavas_id_{{__SELF__}}" class="gcompany-maps"></div>
+
+{% put styles %}
+<link rel="stylesheet" type="text/css" href="{{'/plugins/gemfourmedia/gcompany/assets/css/style.css'|app}}" rel="stylesheet" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% endput %}
+
+{% put scripts %}
+<script src="{{map.map_api}}" async defer></script>
+<script type="text/javascript">
+	var config={
+		'mapType' : "{{map.setting.mapType | default('roadmap')}}",
+		'width' : "{{map.setting.width | default('auto')}}",
+		'height' : "{{map.setting.height | default('350')}}",
+		'cavas_id' : "cavas_id_{{__SELF__}}",
+		'zoom' : {{map.setting.zoom | default(17)}},
+		'zoomControl' : {{map.setting.zoomControl | default(1)}},
+		'scaleControl' : {{map.setting.scaleControl | default(1)}},
+		'panControl' : {{map.setting.panControl | default(1)}},
+		'mapTypeControl' : {{map.setting.mapTypeControl | default(1)}},
+		'streetViewControl' : {{map.setting.streetViewControl | default(1)}},
+		'overviewMapControl' : {{map.setting.overviewMapControl | default(1)}},
+		'draggable' : {{map.setting.draggable | default(1)}},
+		'disableDoubleClickZoom' : {{map.setting.disableDoubleClickZoom | default(0)}},
+		'scrollwheel' : {{map.setting.scrollwheel | default(0)}},
+		'weather' : {{map.setting.weather | default(0)}},
+		'temperatureUnit' : "{{map.setting.temperatureUnit | default('f')}}",
+		'replaceMarkerIcon' : {{map.setting.replaceMarkerIcon | default(0)}},
+		'displayWeatherInfo' : {{map.setting.displayWeatherInfo | default(0)}},
+		'owm_api' : "{{map.setting.owm_api | default()}}",
+		'mapCenterType' : "coordinate",
+		'mapCenterCoordinate' : "{{map.setting.mapCenterCoordinate | default('')}}",
+		'enableStyle' : "{{map.setting.enableStyle | default(0)}}",
+		'styleTitle' : "{{map.setting.styleTitle | default('Gem Contact')}}",
+		'createNewOrDefault' : "{{map.setting.createNewOrDefault | default('createNew')}}",
+		'enableCustomInfoBox' : {{map.setting.enableCustomInfoBox | default(0)}},
+		'boxPosition' : "{{map.setting.boxPosition | default('-150,-155')}}",
+		'closeBoxMargin' : "{{map.setting.closeBoxMargin | default('-9px')}}",
+		'closeBoxImage' : "{{map.setting.closeBoxImage | default('')}}",
+		'url' : "{{map.setting.url | default(url('/'))}}",
+
+	};
+
+	var boxStyles = {"background":"#ffffff","opacity":" 0.85","width":" 280px","height":"100px","border":" 1px solid grey","borderRadius":"3px","padding":" 10px","boxShadow":"30px 10px 10px 1px grey"};
+
+	var stylesCode ="W10=";
+
+	var markersCode ="{{map.markers}}"; 
+	var scripts = [
+		"{{'/plugins/gemfourmedia/gcompany/assets/js/gmbase64.min.js'|app}}",
+		"{{'/plugins/gemfourmedia/gcompany/assets/js/default.js'|app}}",
+	];
+	var observers = [];
+	scripts.forEach(function(src, key) {
+		var obs = new Promise(resolve => {
+			var script = document.createElement('script');
+			script.src = src;
+			script.onload = () => resolve(script);
+			script.onerror = () => reject(new Error('script not loaded'));
+        	document.head.append(script);
+		});
+		observers.push(obs);
+	})
+	Promise.all(observers).then(function() {
+		initializeMap(config, markersCode, stylesCode, boxStyles);
+	});
+
+</script>
+
+{% endput %}

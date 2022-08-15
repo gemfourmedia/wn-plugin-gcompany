@@ -1,0 +1,13 @@
+{% if extrafields %}
+<div class="gcompany-info__mil">
+	<h3>{{"gemfourmedia.gcompany::frontEnd.info.extrafields.label"|trans}}</h3>
+	<ul>
+		{% for field in extrafields %}
+		<li>
+			<span>{{field.title}}</span>
+			<span>{{field.value}}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

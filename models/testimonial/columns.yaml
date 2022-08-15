@@ -1,0 +1,59 @@
+columns:
+    id:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.id'
+        type: number
+    client_id:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.client_id'
+        type: text
+        sortable: true
+        select: name
+        relation: client
+    title:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.title'
+        type: text
+        searchable: true
+        sortable: true
+    rating:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.rating'
+        type: text
+        searchable: false
+        sortable: true
+    company:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.company'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    reviewer_name:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.reviewer_name'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    reviewer_position:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.reviewer_position'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    published:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.published'
+        type: switch
+        sortable: true
+    featured:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.featured'
+        type: switch
+        sortable: true
+    published_at:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.published_at'
+        type: date
+        sortable: true
+    created_at:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.created_at'
+        type: timetense
+        sortable: true
+    updated_at:
+        label: 'gemfourmedia.gcompany::lang.testimonial.fields.updated_at'
+        type: timesince
+        invisible: true
+        sortable: true

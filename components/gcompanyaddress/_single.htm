@@ -1,0 +1,14 @@
+{% if address %}
+<div class="card">
+	<img src="{{address.main_image.getPath()}}" class="img-fluid card-img-top" />
+	<div class="card-body">
+		<h3 class="card-title">{{address.name}}</h3>
+		<div class="card-content">
+			{{address.full_address}}
+		</div>
+		{% if address.url %}
+		<a href={{address.url}} class="card-link">Detail</a>
+		{% endif %}
+	</div>
+</div>
+{% endif %}

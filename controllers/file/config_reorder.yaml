@@ -1,0 +1,5 @@
+title: File
+modelClass: GemFourMedia\GCompany\Models\File
+nameFrom: title
+toolbar:
+    buttons: reorder_toolbar

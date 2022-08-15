@@ -1,0 +1,118 @@
+fields:
+    type:
+        label: 'gemfourmedia.gcompany::lang.address.fields.type'
+        showSearch: true
+        span: auto
+        type: dropdown
+    is_default:
+        label: 'gemfourmedia.gcompany::lang.address.fields.is_default'
+        span: auto
+        type: switch
+    name:
+        label: 'gemfourmedia.gcompany::lang.address.fields.name'
+        span: auto
+        required: 1
+        type: text
+    code:
+        label: 'gemfourmedia.gcompany::lang.address.fields.code'
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+    email:
+        label: 'gemfourmedia.gcompany::lang.address.fields.email'
+        span: auto
+        type: text
+    phone:
+        label: 'gemfourmedia.gcompany::lang.address.fields.phone'
+        span: auto
+        type: text
+    desc:
+        label: 'gemfourmedia.gcompany::lang.address.fields.desc'
+        span: full
+        size: ''
+        type: richeditor
+tabs:
+    fields:
+        address_1:
+            label: 'gemfourmedia.gcompany::lang.address.fields.address_1'
+            span: auto
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.detail'
+        address_2:
+            label: 'gemfourmedia.gcompany::lang.address.fields.address_2'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.detail'
+        city:
+            label: 'gemfourmedia.gcompany::lang.address.fields.city'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.detail'
+        state:
+            label: 'gemfourmedia.gcompany::lang.address.fields.state'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.detail'
+        zip:
+            label: 'gemfourmedia.gcompany::lang.address.fields.zip'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.detail'
+        country:
+            label: 'gemfourmedia.gcompany::lang.address.fields.country'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.detail'
+        images:
+            label: 'gemfourmedia.gcompany::lang.address.fields.images'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.images'
+        _address_finder:
+            label: 'gemfourmedia.gcompany::lang.address.fields.address_finder'
+            commentAbove: 'gemfourmedia.gcompany::lang.address.fields.address_finder_comment'
+            span: left
+            type: gaddressfinder
+            fieldMap:
+                latitude: lat
+                longitude: lng
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.map'
+        lat:
+            label: 'gemfourmedia.gcompany::lang.address.fields.lat'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.map'
+        lng:
+            label: 'gemfourmedia.gcompany::lang.address.fields.lng'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.address.tabs.map'
+        meta_title:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_title'
+            span: auto
+            type: text
+            preset:
+                field: name
+                type: exact
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_description:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_description'
+            size: ''
+            span: left
+            type: textarea
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'
+        meta_keywords:
+            label: 'gemfourmedia.gcompany::lang.seo.fields.meta_keywords'
+            span: left
+            type: text
+            tab: 'gemfourmedia.gcompany::lang.seo.tabs.seo'

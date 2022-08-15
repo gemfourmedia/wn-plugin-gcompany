@@ -1,0 +1,10 @@
+name: Feedback
+form: $/gemfourmedia/gcompany/models/feedback/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Feedback
+defaultRedirect: gemfourmedia/gcompany/feedback
+create:
+    redirect: 'gemfourmedia/gcompany/feedback/update/:id'
+    redirectClose: gemfourmedia/gcompany/feedback
+update:
+    redirect: gemfourmedia/gcompany/feedback
+    redirectClose: gemfourmedia/gcompany/feedback

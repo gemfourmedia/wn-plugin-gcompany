@@ -1,0 +1,10 @@
+name: Article
+form: $/gemfourmedia/gcompany/models/article/fields.yaml
+modelClass: GemFourMedia\GCompany\Models\Article
+defaultRedirect: gemfourmedia/gcompany/article
+create:
+    redirect: 'gemfourmedia/gcompany/article/update/:id'
+    redirectClose: gemfourmedia/gcompany/article
+update:
+    redirect: gemfourmedia/gcompany/article
+    redirectClose: gemfourmedia/gcompany/article
