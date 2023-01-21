@@ -69,5 +69,20 @@ class GCompanyPageExtend
         });
     }
 
+        /**
+     * @return void
+     */
+    protected function extendPageModel()
+    {
+        // StaticPage::extend(function($model) {
+        //     $model->addDynamicMethod('listGContentGroups', function() use ($model) {
+        //         return $this->getContentGroupFilterOptions();
+        //     });
+
+        //     $model->addDynamicMethod('listGContentCategories', function() use ($model) {
+        //         return $this->getCategoryFilterOptions();
+        //     });
+        // });
+    }
 
 }
